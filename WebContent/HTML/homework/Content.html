@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Content</title>
+<style>
+	#frame{
+	border: solid 0px black;
+	width: 600px;			
+	margin: 200px auto;
+	}
+	
+	#frame div {
+		border: solid 2px;
+		border-bottom:0px;
+	}
+		
+	#frame .bottom {
+      border-bottom:solid 2px;
+      text-align:center;
+    }  
+	
+	#frame .label {
+      border-right: solid 2px;
+      float:left;
+      width: 100px;
+      padding-bottom:2px;
+      text-align:center;
+   }
+	
+	#frame .title {
+      text-align:right;
+      border: 0px;
+   }
+</style>
+</head>
+<body>	
+	<div id="frame">
+		<form action="서버주소" method="post">		
+			 <div class="title">
+        		 <span>글목록</span>
+    		 </div>			
+			 <div>
+				<label class="label">작성자</label>
+				<input type="text" name="name" style="vertical-align:middle;"/>							
+			 </div> 			 
+			 <div>
+				<label class="label">제목</label>
+				<input type="text" name="title"/>							
+			 </div>
+			 <div>
+				<label class="label">이메일</label>
+				<input type="text" name="email"/>							
+			 </div> 
+			 <div>
+				<label class="label" style="height: 170px; padding-bottom: 1px;">내용</label>
+				<textarea rows="10" cols="58"></textarea>							
+			 </div>
+			 <div>
+				<label class="label">비밀번호</label>
+				<input type="password" name="pwd"/>							
+			 </div>			 
+			 <div class="bottom">
+		         <input type="submit" name="name" value="글쓰기">
+		         <input type="reset" name="name" value="다시작성">
+		         <input type="button" name="name" value="목록보기">
+		     </div>
+		</form>	
+	</div>
+</body>
+</html>
+
+
+
+
+
