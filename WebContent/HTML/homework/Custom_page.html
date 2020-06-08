@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+@font-face {
+	font-family: 'fontawesome';
+	src: url('../lib/fonts/fontawesome.eot?14663396#iefix')
+		format('embedded-opentype'),
+		url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+		url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+		url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+	font-style: normal;
+}
+
+.w3-right {
+	font-family: "Segoe UI", Arial, sans-serif;
+	letter-spacing: 4px;
+	float: right;
+	line-height: 37px;
+	padding-right: 20px;
+	font-size: 15px;
+	border: 1px solid red;
+}
+
+.w3-bar-item {
+	padding: 16px;
+}
+
+.w3-bar-item .fa {
+	font-size: 20px;
+}
+
+.menu {
+	border: 1px solid blue;
+	padding-bottom: 41px; color: #fff !important;
+	background-color: #4CAF50 !important;
+}
+
+header {
+	width: 100%;
+	border: 1px solid blue;
+}
+
+header>#header_nav {
+	width: 100%;
+	overflow: hidden;
+}
+
+header>#header_nav .menu li {
+	list-style-type: none;
+	display: block;
+	float: left;
+	padding: 8px 16px;
+	font-size: 17px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	letter-spacing: 4px;
+	border: 1px solid red;
+}
+
+#content {
+	border: 1px solid blue;
+	overflow: hidden;
+	width: 100%;
+}
+
+#content .nav {
+	border: 1px solid red;
+	width: 15%;
+	float: left;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+
+header>#header_nav .nav li {
+	float: left;
+}
+
+header>#header_nav>.list li {
+	float: left;
+	margin-right: 20px;
+	line-height: 20px;
+}
+
+#content>.nav>div:nth-child(1) ~ div {
+	padding: 0px 16px;
+}
+
+#content>#display {
+	width: 83%;
+	border: 1px solid blue;
+	overflow: hidden;
+}
+
+#html_exam > .html1 {
+	padding: 35.226px;	
+	border: 1px solid red;
+	font-family: "Segoe UI", Arial, sans-serif;
+	display: block;
+	float:left;	
+}
+#css_exam > .css1 {	
+	border: 1px solid red;
+	font-family: "Segoe UI", Arial, sans-serif;
+	display: block;
+	float:left;	
+	
+}
+
+#js_exam {
+	content: "";
+	display: table;
+	clear: both;
+	box-sizing: inherit;	
+	overflow: hidden;
+	width: 100%;
+}
+
+#js_exam .js1 {
+	padding: 3%;
+	width: 47%;
+	text-align: center;
+	display: block;
+	float: left;
+	line-height: 1.5;
+	box-sizing: inherit;
+	text-align: center !important;
+}
+
+#js_exam .js1>h1 {
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-weight: 400;
+	color: #555555;
+	margin: 2px 0 -20px 0 !important;
+	font-size: 64px !important;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+
+#js_exam .js1>p {
+	color: #3a3a3a !important;
+	font-size: 24px !important;
+	font-family: Verdana, sans-serif;
+	line-height: 1.5;
+}
+
+#js_exam .js1>input:hover {
+	color: #000 !important;
+	background-color: #ccc !important;
+	outline-width: 0;
+}
+
+#js_exam .js1>input {
+	margin: 5px 5px 5px 0;
+	font-size: 16px;
+	color: #fff !important;
+	background-color: #616161 !important;
+	user-select: none;
+	display: inline-block;
+	border: none;
+	padding: 8px 16px;
+	vertical-align: middle;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+#js_exam .js2 {
+	
+	width: 38.99999%;
+	display: block;
+	float: left;
+	box-sizing: inherit;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;	
+}
+#js_exam .js2 .box{
+    padding: 38px;
+}
+#sql_exam{
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0; overflow: hidden;
+    
+}
+.sql1{
+	padding-top: 40px;
+    padding: 3%;
+    padding-bottom: 45px;
+    border: 1px solid red;
+}	
+
+.sql1 h3{
+	font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 24px;
+    display: block;
+}
+
+</style>
+</head>
+<body style="line-height: 1.5;">
+	<header>
+		<div id="header_nav">
+			<div>
+				<img src="w3cschool.jpg"
+					style="margin-top: 16px; margin-left: 2px; width: 290px;" />
+				<div class="w3-right" style="position: relative; top: 5px;">THE
+					WORLD'S LARGEST WEB DEVELOPER SITE</div>
+			</div>
+			<div class="menu">
+				<ul style="padding-left: 0px;">
+					<li>TUTORIALS <img src="trg.JPG"/></li>					
+					<li>REFERENCES<i class="fa fa-caret-down"></i></li>					
+					<li>EXAMPLES<i class="fa fa-caret-down"></i></li>					
+					<li>EXERCISES<i class="fa fa-caret-down"></i></li>					
+					<div class="w3-right">
+						<a class="w3-bar-item" href="javascript:void(0)"
+							onclick="open_search(this)" title="Search W3Schools"><i
+							class="fa"></i></a> <a class="w3-bar-item" href="javascript:void(0)"
+							onclick="open_translate(this)" title="Translate W3Schools"><i
+							class="fa"></i></a> <a class="w3-bar-item" href="javascript:void(0)"
+							onclick="changecodetheme(this)" title="Toggle Dark Code"><i
+							class="fa"></i></a>
+					</div>
+				</ul>
+
+			</div>
+		</div>
+	</header>
+	<div id="content">
+		<div class="nav">
+			<!-- 좌측 nav -->
+			<div style="font-size: 20px; margin: 16px;">HTML and CSS</div>
+			<!-- 제목 -->
+			<div>LEARN HTML</div>
+			<div>LEARN CSS</div>
+			<div>LEARN Bootstrap</div>
+			<div>LEARN W3.CSS</div>
+			<div>LEARN Colors</div>
+			<div>LEARN Icons</div>
+			<div>LEARN Graphics</div>
+			<div>LEARN How To</div>
+			<div>LEARN Sass</div>
+
+			<div style="font-size: 20px; margin: 16px; padding: 0px;">JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN jQuery</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+			<div>LEARN JavaScript</div>
+		</div>
+		<div id="display">
+			<div id="html_exam" style="border: 1px solid red; overflow: hidden;">
+				<div class="html1">
+					<h1 style="font-size: 80px;">HTML</h1>
+					<div>The language for building web pages</div>
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+				</div>
+				<div class="html2">
+					<h1 style="font-size: 80px;">HTML</h1>
+					<div>The language for building web pages</div>
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+					<input type="submit" name="LEARN_HTML" value="LEARN HTML">
+				</div>
+			</div>
+
+			<div id="css_exam" style="border: 1px solid blue; overflow: hidden;">
+				<div class="css1">
+					<h3>CSS Example:</h3>
+					<div class="w3-code cssHigh notranslate w3-card-2 w3-border-green">
+						<span class="cssselectorcolor" style="color: brown"> body <span
+							class="cssdelimitercolor" style="color: black">{</span><span
+							class="csspropertycolor" style="color: red"><br>
+								&nbsp; background-color<span class="csspropertyvaluecolor"
+								style="color: mediumblue"><span class="cssdelimitercolor"
+									style="color: black">:</span> lightblue<span
+									class="cssdelimitercolor" style="color: black">;</span></span><br></span><span
+							class="cssdelimitercolor" style="color: black">}</span><br>
+						<br> h1 <span class="cssdelimitercolor" style="color: black">{</span><span
+							class="csspropertycolor" style="color: red"><br>
+								&nbsp; color<span class="csspropertyvaluecolor"
+								style="color: mediumblue"><span class="cssdelimitercolor"
+									style="color: black">:</span> white<span
+									class="cssdelimitercolor" style="color: black">;</span></span><br>
+								&nbsp; text-align<span class="csspropertyvaluecolor"
+								style="color: mediumblue"><span class="cssdelimitercolor"
+									style="color: black">:</span> center<span
+									class="cssdelimitercolor" style="color: black">;</span></span><br></span><span
+							class="cssdelimitercolor" style="color: black">}</span><br>
+						<br> p <span class="cssdelimitercolor" style="color: black">{</span><span
+							class="csspropertycolor" style="color: red"><br>
+								&nbsp; font-family<span class="csspropertyvaluecolor"
+								style="color: mediumblue"><span class="cssdelimitercolor"
+									style="color: black">:</span> verdana<span
+									class="cssdelimitercolor" style="color: black">;</span></span><br>
+								&nbsp; font-size<span class="csspropertyvaluecolor"
+								style="color: mediumblue"><span class="cssdelimitercolor"
+									style="color: black">:</span> 20px<span
+									class="cssdelimitercolor" style="color: black">;</span></span><br></span><span
+							class="cssdelimitercolor" style="color: black">}</span>
+						</span>
+					</div>
+				</div>
+				<div class="css2" style="padding: 3%">
+					<h1>CSS</h1>
+					<p class="w3-xlarge">The language for styling web pages</p>
+					<a href="/css/default.asp" class="w3-button w3-dark-grey">LEARN
+						CSS</a> <a href="/cssref/default.asp" class="w3-button w3-dark-grey">CSS
+						REFERENCE</a>
+				</div>
+			</div>
+
+			<div id="js_exam">
+
+				<div class="js1">
+					<h1>JavaScript</h1>
+					<p>The language for programming web pages</p>
+					<input type="button" value="LEARN JAVASCRIPT"> <input
+						type="button" value="JAVASCRIPT REFERENCE">
+				</div>
+
+
+				<div class="js2">
+					<div>
+						<h3>JavaScript Example:</h3>
+						<div class="box">
+							<div class="htmlHigh">
+								<span class="tagnamecolor" style="color: brown"> <span
+									class="tagcolor" style="color: mediumblue">&lt;</span> button <span
+									class="attributecolor" style="color: red"> onclick <span
+										class="attributevaluecolor" style="color: mediumblue">
+											="myFunction()"</span>
+								</span> <span class="tagcolor" style="color: mediumblue">&gt;</span>
+								</span> Click Me! <span class="tagnamecolor" style="color: brown">
+									<span class="tagcolor" style="color: mediumblue">&lt;</span>
+									/button <span class="tagcolor" style="color: mediumblue">&gt;</span>
+								</span> <br>
+								<br> <span class="tagnamecolor" style="color: brown">
+									<span class="tagcolor" style="color: mediumblue">&lt;</span>
+									script<span class="tagcolor" style="color: mediumblue">&gt;</span>
+								</span> <span class="jscolor" style="color: black"><br> <span
+									class="jskeywordcolor" style="color: mediumblue">function</span>
+									myFunction() {<br> <span class="jsnumbercolor"
+									style="color: red"> </span>&nbsp; <span class="jskeywordcolor"
+									style="color: mediumblue">var</span> x = document.<span
+									class="jspropertycolor" style="color: black">getElementById</span>(<span
+									class="jsstringcolor" style="color: brown">"demo"</span>);<br>
+									<span class="jsnumbercolor" style="color: red"> </span>&nbsp;
+									x.<span class="jspropertycolor" style="color: black">style</span>.<span
+									class="jspropertycolor" style="color: black">fontSize</span> =
+									<span class="jsstringcolor" style="color: brown">"25px"</span>;
+									<br> <span class="jsnumbercolor" style="color: red">
+								</span>&nbsp; x.<span class="jspropertycolor" style="color: black">style</span>.<span
+									class="jspropertycolor" style="color: black">color</span> = <span
+									class="jsstringcolor" style="color: brown">"red"</span>; <br>}<br>
+								</span><span class="tagnamecolor" style="color: brown"><span
+									class="tagcolor" style="color: mediumblue">&lt;</span>/script<span
+									class="tagcolor" style="color: mediumblue">&gt;</span></span>
+							</div>
+						</div>
+						<a href="/js/tryit.asp?filename=tryjs_default" target="_blank"
+							class="w3-button w3-theme w3-hover-green w3-hover-shadow">Try
+							it Yourself »</a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="sql_exam">
+				<div class="sql1">
+					<h3>SQL Example</h3>
+				</div>			
+			</div>
+
+			<div class="lang"></div>
+
+			<div class="picker"></div>
+
+			<div class="exercises"></div>
+
+			<div class="templates"></div>
+
+			<div class="how_section"></div>
+
+			<div class="certifi"></div>
+
+			<div class="footer"></div>
+			<footer>
+				<!-- 하단 -->
+
+
+			</footer>
+			<!-- 하단 -->
+		</div>
+	</div>
+</body>
+</html>
