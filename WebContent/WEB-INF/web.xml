@@ -90,4 +90,71 @@
   	<servlet-name>Example07_Fail</servlet-name>
   	<url-pattern>/com/java/servlet/Example07_Fail</url-pattern>
   </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>Example08_</servlet-name>
+  	<servlet-class>com.java.servlet.Example08_</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Example08_</servlet-name>
+  	<url-pattern>/com/java/servlet/Example08_</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  	<servlet-name>Example08_Sub</servlet-name>
+  	<servlet-class>com.java.servlet.Example08_Sub</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Example08_Sub</servlet-name>
+  	<url-pattern>/com/java/servlet/Example08_Sub</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+  	<servlet-name>Example09_CookieSet</servlet-name>
+  	<servlet-class>com.java.servlet.Example09_CookieSet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Example09_CookieSet</servlet-name>
+  	<url-pattern>/com/java/servlet/Example09_CookieSet</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+  	<servlet-name>Example09_CookieGet</servlet-name>
+  	<servlet-class>com.java.servlet.Example09_CookieGet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Example09_CookieGet</servlet-name>
+  	<url-pattern>/com/java/servlet/Example09_CookieGet</url-pattern>
+  </servlet-mapping>
+  
+  
+       <servlet>
+  	<servlet-name>Example09_CookieDel</servlet-name>
+  	<servlet-class>com.java.servlet.Example09_CookieDel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Example09_CookieDel</servlet-name>
+  	<url-pattern>/com/java/servlet/Example09_CookieDel</url-pattern>
+  </servlet-mapping>
+  
+         <servlet>
+  	<servlet-name>Example10_SessionSet</servlet-name>
+  	<servlet-class>com.java.servlet.Example10_SessionSet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Example10_SessionSet</servlet-name>
+  	<url-pattern>/com/java/servlet/Example10_SessionSet</url-pattern>
+  </servlet-mapping>
+  
+  
+         <servlet>
+  	<servlet-name>Example10_SessionGet</servlet-name>
+  	<servlet-class>com.java.servlet.Example10_SessionGet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Example10_SessionGet</servlet-name>
+  	<url-pattern>/com/java/servlet/Example10_SessionGet</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
